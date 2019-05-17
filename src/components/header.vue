@@ -11,14 +11,6 @@ export default {
 </script>
 
 <style>
-body{    
-    margin: 0px;
-    padding: 0px;
-}
-html{
-    margin: 0px;
-    padding: 0px;
-}
 
 #header{
     margin: 0px;
