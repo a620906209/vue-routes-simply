@@ -23,7 +23,7 @@ h1, h2 {
   font-weight: normal;
 }
 ul {
-  list-style-type: none;
+  list-style-type: square;  /*can't work?*/
   padding: 0;
 }
 li {

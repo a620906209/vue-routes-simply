@@ -1,7 +1,8 @@
 <template>
   <div id="app">
+    <headder></headder>
     <img src="./assets/logo.png">
-    <div class="">
+    <div class="">  
       <ul>
         <li>
           <router-link to="/">Home</router-link>
@@ -14,23 +15,29 @@
         </li>
       </ul>
     </div>
+
     <router-view/>
+    <foot></foot>
+
   </div>
 </template>
 
 <script>
+import foot from "@/components/footer"
+import headder from "@/components/header"
+
 export default {
-  name: 'App'
+  name: 'App', 
+  components:{
+    'foot': foot,
+    'headder': headder
+  }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
